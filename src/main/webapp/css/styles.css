@@ -1,0 +1,150 @@
+/********************************************
+styles.css
+메인 css
+********************************************/
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #F5F5F5;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+#search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+    background-color: #E3E3E3;
+}
+
+#search-bar {
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#categories {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5%;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #E3E3E3;
+}
+
+#categories span {
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+#content {
+    display: flex;
+    flex: 1;
+    padding: 20px;
+    overflow: auto;
+}
+
+#main-content {
+    width: 70%;
+    padding-right: 20px;
+}
+
+.news-item {
+    display: flex;
+    margin-bottom: 20px;
+    background-color: #FFFFFF;
+    padding: 10px;
+    border: 1px solid #E3E3E3;
+    border-radius: 5px;
+}
+
+.news-item img {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+}
+
+.news-content h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.more-news {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.more-news a {
+    text-decoration: none;
+    color: #1E90FF;
+    font-size: 16px;
+}
+
+#sidebar {
+    width: 30%;
+    background-color: #FFFFFF;
+    padding: 20px;
+    border: 1px solid #E3E3E3;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* 추가된 부분: 인기검색어와 오늘의 키워드를 나누기 위한 간격 */
+}
+
+#sidebar h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#sidebar li {
+    margin: 5px 0;
+}
+#popular-searches {
+    flex: 1;
+}
+
+#popular-searches h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#popular-searches ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#popular-searches li {
+    margin: 5px 0;
+}
+
+#keywords {
+    margin-top: 20px;
+}
+
+#keywords h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #E3E3E3;
+    padding: 20px 0;
+    text-align: center;
+    height: 5%;
+}
+
+footer p {
+    color: #6B6B6B;
+    margin: 0;
+}
