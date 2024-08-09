@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="egovframework.sit.cmmn.service.impl.MainMapper">
+
+	<select id="selectMainList" resultType="egovMap">
+		SELECT 
+		 news_title, news_id, TO_CHAR(create_dt,'YYYY-MM-DD') AS create_dt
+		FROM news
+	</select>
+
+</mapper>
